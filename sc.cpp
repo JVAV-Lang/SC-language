@@ -1,3 +1,6 @@
+/*      
+code by dongdeng
+*/
 #include<cstdio>
 #include<cstring>
 #include "sc.h"
