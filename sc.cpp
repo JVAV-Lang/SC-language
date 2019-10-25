@@ -43,8 +43,14 @@ int main(){
 			else cout<<temp<<tem<<";"<<endl;
 			continue;
 		}
-		if(temp=="break"||temp=="continue")cout<<temp<<";"<<endl;
-		if(temp=="{"||temp=="}")cout<<temp<<endl; 
+		if(temp=="break"||temp=="continue"){
+			cout<<temp<<";"<<endl;
+			continue;
+		}
+		if(temp=="{"||temp=="}"){
+			cout<<temp<<endl;
+			continue;
+		}
 		if(temp=="c"){
 			getline(cin,tem);
 			cout<<tem<<endl;
@@ -94,6 +100,7 @@ int main(){
 			cin>>tem>>ai>>bi;
 			if(tem=="-")tem="i";
 			cout<<"for(int "<<tem<<"="<<ai<<";"<<tem<<"<"<<bi<<";"<<tem<<"++)"<<endl;
+			continue;
 		}
 		if(temp=="define"){
 			cin>>tem;
@@ -111,6 +118,7 @@ int main(){
 			function(tem);
 			continue;
 		}
+		cout<<temp<<endl;
 		} 
 	fclose(stdin);
 	fclose(stdout);
